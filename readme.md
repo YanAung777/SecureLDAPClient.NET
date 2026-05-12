@@ -101,7 +101,7 @@ trustedCertificatesDirectory: "/app/certs"
 - Use least-privilege service accounts
 - Store secrets in Azure Key Vault, Docker Secrets, etc.
 - Enable certificate validation (avoid disabling)
--- Use short-lived connections where possible
+- Use short-lived connections where possible
 ## 📖 API Reference
 Method,Description
 CreateSecureLdapConnectionAsync(),Create and bind LDAPS connection with retries
