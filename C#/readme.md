@@ -1,6 +1,8 @@
 # LdapHelper - Secure LDAPS Client for .NET
 
 A robust, production-ready LDAP helper class for **.NET** that simplifies secure LDAPS connections, user lookups, and authentication with built-in retry logic, Linux support, and comprehensive helper methods.
+You can use this library as well https://github.com/cemonal/LdapLib
+
 ### Notes
 LdapSessionOptions.VerifyServerCertificate is not supported in Linux 
 LdapConnection fails to bind on Linux when running .NET 6.0.0-rc.2.21480.5 version of System.DirectoryServices.Protocols package and throws
