@@ -1,3 +1,7 @@
+## Project Setup
+``` Bash
+func new --name LdapProxy --template "HTTP trigger" --language javascript
+```
 ## Install Dependencies
 ```Bash
 npm install ldapts
