@@ -1,4 +1,7 @@
-
+## Install Dependencies
+```Bash
+npm install ldapts
+```
 ## Sample Request Body:
 
 ```Json
