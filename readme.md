@@ -103,13 +103,16 @@ trustedCertificatesDirectory: "/app/certs"
 - Enable certificate validation (avoid disabling)
 - Use short-lived connections where possible
 ## 📖 API Reference
-Method,Description
-CreateSecureLdapConnectionAsync(),Create and bind LDAPS connection with retries
-SearchUserAsync(),General search
-GetUserByEmailAsync(),Search by email
-GetUserBySamAccountNameAsync(),Search by Windows username
-GetUserByUpnAsync(),Search by User Principal Name
-AuthenticateUserAsync(),Validate user credentials
-GetAttributeValue(),Get single attribute value
-GetAllAttributeValues(),Get multi-valued attributes
-SearchPagedAsAsyncEnumerable(),Streaming paged search
+
+| Method                                      | Description                                              |
+|---------------------------------------------|----------------------------------------------------------|
+| `CreateSecureLdapConnectionAsync()`        | Create and bind LDAPS connection with retries            |
+| `SearchUserAsync()`                         | General search                                           |
+| `GetUserByEmailAsync()`                     | Search by email                                          |
+| `GetUserBySamAccountNameAsync()`            | Search by Windows username (sAMAccountName)              |
+| `GetUserByUpnAsync()`                       | Search by User Principal Name (UPN)                      |
+| `AuthenticateUserAsync()`                   | Validate user credentials by binding                     |
+| `GetAttributeValue()`                       | Get single attribute value                               |
+| `GetAllAttributeValues()`                   | Get all values of a multi-valued attribute               |
+| `SearchPagedAsync()`                        | Paged search returning all results as List               |
+| `SearchPagedAsAsyncEnumerable()`            | Streaming paged search (memory efficient)                |
