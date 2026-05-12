@@ -1,6 +1,13 @@
 # LdapHelper - Secure LDAPS Client for .NET
 
 A robust, production-ready LDAP helper class for **.NET** that simplifies secure LDAPS connections, user lookups, and authentication with built-in retry logic, Linux support, and comprehensive helper methods.
+### Notes
+LdapSessionOptions.VerifyServerCertificate is not supported in Linux 
+LdapConnection fails to bind on Linux when running .NET 6.0.0-rc.2.21480.5 version of System.DirectoryServices.Protocols package and throws
+see : https://github.com/dotnet/runtime/issues/60972
+
+When a custom CA (Root CA) needs to be verified on Linux, the expected callback-based validation path throws an exception. That made the C# option unsuitable for this service because CA validation is a hard requirement and could not be safely bypassed. You must use node.js deployment.
+https://www.npmjs.com/package/ldap-async
 
 ## ✨ Features
 
