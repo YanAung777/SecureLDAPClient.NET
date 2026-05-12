@@ -73,7 +73,7 @@ Console.WriteLine($"Authentication: {isValid}");
 ```
 ## 5. Paged Search (for large result sets)
 ```C#
-C#await foreach (var entry in LdapHelper.SearchPagedAsAsyncEnumerable(
+await foreach (var entry in LdapHelper.SearchPagedAsAsyncEnumerable(
     connection,
     searchBase: "dc=example,dc=com",
     filter: "(objectClass=user)",
