@@ -6,9 +6,10 @@ LdapSessionOptions.VerifyServerCertificate is not supported in Linux
 LdapConnection fails to bind on Linux when running .NET 6.0.0-rc.2.21480.5 version of System.DirectoryServices.Protocols package and throws
 see : https://github.com/dotnet/runtime/issues/60972
 
-When a custom CA (Root CA) needs to be verified on Linux, the expected callback-based validation path throws an exception. That made the C# option unsuitable for this service because CA validation is a hard requirement and could not be safely bypassed. You must use node.js deployment and use javascripts modules https://www.npmjs.com/package/ldap-async
-
-This implementation uses TrustedCertificatesDirectory method with PEM file in directory.
+When a custom CA (Root CA) needs to be verified on Linux, the expected callback-based validation path throws an exception. That made the C# option unsuitable for this service because CA validation is a hard requirement. 
+You can use node.js deployment and use javascripts modules https://www.npmjs.com/package/ldap-async
+See JavaScriptApproach folder
+This implementation uses TrustedCertificatesDirectory method with PEM file in directory as alternative method.
 
 ## ✨ Features
 
