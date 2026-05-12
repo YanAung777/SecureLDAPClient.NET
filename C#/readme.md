@@ -38,8 +38,7 @@ This implementation uses TrustedCertificatesDirectory method with PEM file in di
 dotnet add package System.DirectoryServices.Protocols
 ```
 
-## 🔧 Usage
-1. Basic Connection
+## 🔧 Usage 1. Basic Connection
 
 ```C#
 using System.Threading.Tasks;
